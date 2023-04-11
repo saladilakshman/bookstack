@@ -97,8 +97,8 @@ background:white;
 .book-title,.book-author,span{
    text-align:center;
    font-family:Arial, Helvetica, sans-serif;
-   font-weight:300;
-   color:#0F084B;
+   font-weight:400;
+   color:steelblue;
 }
 .book-desc{
     text-align:justify;
@@ -199,20 +199,16 @@ border-radius:0.2rem;
         width:16rem;
     }
     .books{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-        place-items:center;
-margin:0.5rem
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
     }
     .book-card{
-        width:100%;
-        display:flex;
-flex-direction:column;
-justify-content:space-around;
-align-items:center;
-height:100%;
-border-radius:0.2;
+        width:20rem;
+height:50vh;
     }
+   
     .overlay-content{
         border-radius:0;
         
