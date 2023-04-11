@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+    background-color:whitesmoke;
+    padding-block-end:2rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow:0pc 0px 5px rgba(0,0,0,0.5);
+    padding:0.5rem;
+    gap:0.5em;
+    background-color:#7F2CCB;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-name{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif
 }
-
-.App-link {
-  color: #61dafb;
+.intro-images{
+    position:relative;
 }
+.blob{
+    width:30rem; 
+}
+.book{
+    height:25rem;
+    position:absolute;
+    top:2%;
+    left:22%;
+}
+.intro{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#1E2019;
+    padding-block-start:0.5rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.intro-text{
+    font-size:2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+input{
+    width:20rem;
+    height:1.8rem;
+    border-radius:0.2rem;
+    border:none;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.33);
+  caret-color:red;
+}
+.search-button{
+    min-width:5rem;
+    color:white;
+    background-color:#226CE0;
+    border:none;
+    border-radius:0.2rem;
+    font-size:1rem;
+}
+.gif{
+    display:block;
+    margin:auto;
+    width:10rem;
+    margin-block-start:8rem;
+   mix-blend-mode: color-burn;
+}
+.books{
+   display:grid;
+   grid-template-columns:repeat(3,1fr);
+   place-items:center;
+   grid-gap:1rem;
+}
+.book-card{
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+align-items:center;
+box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+box-sizing:border-box;
+width:20rem;
+height:22rem;
+border-radius:1rem;
+padding:auto;
+background:white;
+}
+.book-card:hover{
+    transition:0.5s;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+}
+.book-image{
+    object-fit:contain;
+    align-self:center;
+}
+.book-title,.book-author,span{
+   text-align:center;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:300;
+   color:#0F084B;
+}
+.book-desc{
+    text-align:justify;
+}
+.book-author{
+    color:grey;
+}
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,10);
+    z-index:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.overlay-content{
+    position:absolute;
+    background:white;
+    width:60rem;
+   height:fit-content;
+   display:flex;
+   flex-direction:column;
+   justify-content:flex-start;
+   align-items:center; 
+   margin:1rem;
+   border-radius:2rem;
+}
+.overlay-context{
+    display:grid;
+    grid-template-columns:50rem;
+    place-items:center;
+    grid-gap:1rem;
+  margin-block-start:1rem;
+  margin-block-end:1rem;
+}
+.cancel-icon{
+    top:3%;
+    right:3%;
+    position:absolute;
+    font-size:1.8rem;
+cursor:pointer;
+}
+.cancel-icon:hover{
+    opacity:0.5;
+    transition:0.3s;
+}
+.speaker-icon{
+    margin-left:4rem;
+    margin-bottom:0.3rem;
+align-self:self-end;
+color:white;
+background-color:#226CE0;
+border:none;
+height:1.5rem;
+width:5rem;
+border-radius:0.2rem;
+}
+.speaker-icon:focus{
+    outline:none;
+}
+.stales::-webkit-scrollbar{
+    display:none;
+}
+.layout-effect{
+    opacity:0;
+    transition:0.5s;
+}
+@media only screen and (max-width:480px){
+    .intro{
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-block-end:1rem;
+    }
+    .overlay-content{
+        width:100%;
+        height:100%;
+        overflow:scroll;
+    }
+    .blob{
+        width:15rem;
+    }
+   
+    .book{
+        height:15rem;
+        top:1%;
+    }
+    .intro-txt{
+        font-size:1.5rem;
+        text-align:center;
+    }
+    input{
+        width:16rem;
+    }
+    .books{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        place-items:center;
+margin:0.5rem
+    }
+    .book-card{
+        width:100%;
+        display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+    }
+    .overlay-content{
+        border-radius:0;
+    }
+    .overlay-context{
+       grid-template-columns:22rem;
+    }
+    .error-component{
+        padding-top:15rem
+    }
 }
