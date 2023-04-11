@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bookstack/static/css/main.e6c13ad2.css",
-    "main.js": "/bookstack/static/js/main.c9e84735.js",
-    "static/css/672.57f25b3d.chunk.css": "/bookstack/static/css/672.57f25b3d.chunk.css",
+    "main.js": "/bookstack/static/js/main.5bf52383.js",
+    "static/css/672.0d17ada2.chunk.css": "/bookstack/static/css/672.0d17ada2.chunk.css",
     "static/js/672.428379a2.chunk.js": "/bookstack/static/js/672.428379a2.chunk.js",
     "static/js/430.9a8e4b61.chunk.js": "/bookstack/static/js/430.9a8e4b61.chunk.js",
     "static/media/magicpattern-blob-1680846283842.png": "/bookstack/static/media/magicpattern-blob-1680846283842.4d2edd288ad0841b9e29.png",
@@ -11,13 +11,13 @@
     "static/media/books.png": "/bookstack/static/media/books.59cbe8cf9d43096d8604.png",
     "index.html": "/bookstack/index.html",
     "main.e6c13ad2.css.map": "/bookstack/static/css/main.e6c13ad2.css.map",
-    "main.c9e84735.js.map": "/bookstack/static/js/main.c9e84735.js.map",
-    "672.57f25b3d.chunk.css.map": "/bookstack/static/css/672.57f25b3d.chunk.css.map",
+    "main.5bf52383.js.map": "/bookstack/static/js/main.5bf52383.js.map",
+    "672.0d17ada2.chunk.css.map": "/bookstack/static/css/672.0d17ada2.chunk.css.map",
     "672.428379a2.chunk.js.map": "/bookstack/static/js/672.428379a2.chunk.js.map",
     "430.9a8e4b61.chunk.js.map": "/bookstack/static/js/430.9a8e4b61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c9e84735.js"
+    "static/js/main.5bf52383.js"
   ]
 }
