@@ -128,7 +128,8 @@ return
           <div key={id} className="book-card"onClick={()=>bookOneDesc(id)}>
 <img src={volumeInfo?.imageLinks?.thumbnail??nopic}alt=""loading="lazy"className="book-image"/>
 <h4 className="book-title">{volumeInfo.title}</h4>
-<h4 className="book-author">Authors: <span>{volumeInfo.hasOwnProperty('authors')?volumeInfo.authors:"Unknown"}</span></h4>
+<h4 className="book-author">Authors: <span>{volumeInfo.hasOwnProperty('authors')?
+new Intl.ListFormat("en",{style:'long',type:'conjunction'}).format(volumeInfo.authors):"Unknown"}</span></h4>
           </div></Fade>
         })}
         </div>
